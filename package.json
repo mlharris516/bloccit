@@ -6,7 +6,6 @@
   "scripts": {
     "test": "export NODE_ENV=test&& jasmine"
   },
-  {
   "author": "Meredith",
   "license": "ISC",
   "dependencies": {
