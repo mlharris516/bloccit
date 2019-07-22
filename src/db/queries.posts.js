@@ -30,7 +30,7 @@ module.exports = {
     },
 
     deletePost(req, callback){
-        return Post.findByPk(req.params.id)
+        return Post.findById(req.params.id)
         .then((post) => {
           const authorized = new Authorizer(req.user, post).destroy();
 
