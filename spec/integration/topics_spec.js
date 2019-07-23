@@ -118,7 +118,7 @@ describe("routes : topics", () => {
             Topic.all()
             .then(topics => {
               expect(err).toBeNull();
-              expect(topics.length).toBe(topicCountBeforeDelete);
+              expect(topics.length).toBe(topicCountBeforeDelete - 1);
               done();
             })
 
